@@ -64,3 +64,31 @@ main img{
     width: 256px;
     height: 284px;
 }
+
+@media (min-width: 768px) { /*we specify the condition by first defining what the rule should be in relation to*/
+    /* Tablet styles will go here */
+    button {
+        display: none; /* Hide navigation links on small screens */
+    }
+    nav { 
+        display: block;
+        padding-right: 54px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding-left: 0;
+        
+    }
+    nav a {
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color:black;
+        line-height: 22.4px;
+        letter-spacing: 0px;
+    }
+}

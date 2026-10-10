@@ -1,0 +1,66 @@
+
+.mainpage {
+
+}
+
+.header{
+    display: flex; /*turns on Flexbox.*/
+    justify-content: space-between; /*puts the spare space between the logo and button, pushing them to opposite ends.*/
+    align-items: center; /* Centre the logo and button vertically */
+}
+
+/*Turn on Flexbox*/
+button { /*refer to the 3 dot menu*/ /*3 separate parts: Dots, background, border*/
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: none;
+    display: flex; /*Turn on Flexbox*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav { /*To hide the whole navigation area,Think of nav as the box and the links as items inside it. */
+    display: none; /* Hide navigation links on small screens */
+
+}
+
+nav a { /*selects the links inside the navigation.*/
+
+}
+
+main{
+    /*width: 211px;*/
+    /*height: 104px;*/ /*this is being removed ,Let the text box grow naturally if the paragraph wraps onto more lines.*/
+    text-align: center;
+    margin-top: 103px;
+
+}
+
+.recipe-text { /*it groups only the heading and paragraph.*/
+    margin-bottom: 30px; 
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.recipe-text h1 {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39.6px;
+    letter-spacing: -0.8px;
+}
+
+.recipe-text p {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+main img{
+    width: 256px;
+    height: 284px;
+}

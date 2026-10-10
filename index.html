@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <script src="https://kit.fontawesome.com/ad4071b035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -24,9 +25,14 @@
                 <h1>Recipes</h1>
                 <p>Simple, tasty recipes for everyday cooking, made with real ingredient.</p>
             </div>
-            <img src="images/Bitmap.jpg" alt="A bowl of pumpkin soup">
-                
+            <picture>
+                <source media="(min-width: 1440px)" srcset="images/soup-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="images/soup-tablet.jpg">
+                <source media="(min-width: 1440px)" srcset="images/soup-desktop.jpg">
+                <img src="images/Bitmap.jpg" alt="A bowl of pumpkin soup">
+            </picture>  
         </main> 
+        <i class="fa-solid fa-arrow-down-long scroll-arrow"></i>
     </div>     
 </body>
 </html>

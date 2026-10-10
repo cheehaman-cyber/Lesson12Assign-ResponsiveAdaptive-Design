@@ -65,10 +65,14 @@ main img{
     height: 284px;
 }
 
+.scroll-arrow {
+    display: none;
+}
+
 @media (min-width: 768px) { /*we specify the condition by first defining what the rule should be in relation to*/
     /* Tablet styles will go here */
     .header {
-        padding: 34px;
+        padding-top: 34px;
         padding-left: 75px;
     }
 
@@ -119,5 +123,90 @@ main img{
         width: 617px;
         height: 512px;
         object-fit: cover;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        padding-top: 62px;
+        padding-left: 142px;
+        justify-content: flex-start; /*“Group these items on the left.” We can then use gap to control the distance between them.*/
+    }
+
+    nav { 
+        display: block;
+        padding-left: 115px;
+        /*padding-right: 826px,creates a huge empty area inside the navigation to push the links back left. That space stays 826px even when the screen width changes.;*/
+        padding-top: 0.8px;
+        padding-bottom: 1.2px;
+    }
+
+    .recipe-text { /*it groups only the heading and paragraph.*/
+        margin-top: 0px; 
+        margin-left: 97px;
+        margin-right: 97px;
+        margin-bottom: 45px;
+        max-width: 410px;
+
+    }
+    .recipe-text h1 {
+        font-size: 72px;
+        line-height: 83px;
+        margin-top:184px;
+        margin-bottom:0;
+    }
+
+    .recipe-text p {
+        margin-top: 45.8px;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 28px;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    main img{
+        width: 576px;
+        height: 648px;
+        object-fit: cover;
+    }
+
+    main{
+        display: flex;
+        margin-top: 0px;
+        margin-right: 144px;
+    }
+
+    recipe-text { /*it groups only the heading and paragraph.*/
+        /*margin-top: 184px;*/
+        margin-left: 136px;
+        margin-right: 888px;
+        margin-bottom: 287px;
+    }
+
+    .mainpage {
+        position: relative;
+    }
+
+    picture {
+        top: 81px;
+        right: 144px;
+        position: absolute;
+    }
+
+    .scroll-arrow {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        left: 144px;
+        top: 689px;
     }
 }
